@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="app.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header class="weather-app__header">
+        <h1 class="weather-app__title">Weather App</h1>
+      </header>
+
+      <section class="weather-app__current-weather">
+        <h2 class="weather-app__location-name" id="location-name">
+          Current Location: Addis Ababa
+        </h2>
+        <div class="weather-info">
+          <p class="weather-info__temperature" id="temperature">
+            Temperature: --°C
+          </p>
+          <p class="weather-info__description" id="description">Weather: --</p>
+          <p class="weather-info__humidity" id="humidity">Humidity: --%</p>
+          <p class="weather-info__wind-speed" id="wind-speed">
+            Wind Speed: -- km/h
+          </p>
+        </div>
+      </section>
+
+      <form class="weather-app__search" id="form">
+        <input
+          class="weather-app__search-input"
+          type="text"
+          id="city-input"
+          placeholder="Enter city name"
+        />
+        <button class="weather-app__search-btn" id="search-btn" type="submit">
+          Search
+        </button>
+      </form>
+      <div id="spinner"></div>
+    </div>
+  </body>
+</html>
